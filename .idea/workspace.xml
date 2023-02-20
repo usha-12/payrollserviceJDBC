@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b83b61a-62a7-42df-b938-4043405a514d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/brideglabz/jdbc/EmployeeCustomException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/brideglabz/jdbc/EmployeeCustomException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/brideglabz/jdbc/EmployeePayroll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/brideglabz/jdbc/EmployeePayroll.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
