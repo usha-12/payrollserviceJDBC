@@ -8,19 +8,12 @@ public class EmployeePayroll {
         try {
             Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/payroll_service", "root",
                     "Usha@123");
-            String s = "select * from employee_payroll";
-            PreparedStatement ps = conn.prepareStatement(s);
-            ResultSet result = ps.executeQuery();
 
-            while (result.next()) {
-                int id = result.getInt(1);
-                String name = result.getString(2);
-                String gender = result.getString(3);
-                Double salary = result.getDouble(4);
-                String date = result.getString(5);
-                System.out.println(
-                        "id:- " + id + " Name:- " + name + " Gender:- " + " | " + " Salary:- " + salary + " Date:- " + date);
-            }
+            Statement st = conn.createStatement();
+            st.execute("select sum(salary) from employee_payroll");
+            st.execute("select avg(salary) from employee_payroll");
+            st.execute("select min(salary) from employee_payroll");
+            st.execute("select count(salary) from employee_payroll");
 
         } catch (SQLException e) {
             e.printStackTrace();
